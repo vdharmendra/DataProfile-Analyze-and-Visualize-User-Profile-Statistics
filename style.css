@@ -1,0 +1,81 @@
+/* GOOGLE FONT LINK */
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+/* RESET DEFAULT CSS */
+*{
+  outline: none;
+  text-decoration: none;
+}
+ul, li{
+  list-style-type: none;
+}
+/* BODY STYLE */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+  background-color: #fffff3;
+  font-family: "Edu NSW ACT Cursive", cursive;
+}
+/* CARD STYLE */
+.stats-container {
+  margin: 20px;
+    border: 3px solid #ffc9ac;
+    min-width: 200px;
+    height: 100px;
+    position: relative;
+    background-color: #ffc9ac;
+    padding: 20px;
+    border-radius: 7px;
+    transition: all .1s;
+}
+/* CARD HEADING */
+.stats-container h4 {
+  letter-spacing: 1px;
+  color: #054b80;
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  transition: all .3s;
+}
+/* ICON */
+.icon {
+  color: #1a649b;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+transition: all .3s;
+  transform: translateX(-50%);
+}
+/* NUMBER */
+.counter {
+  font-size: 30px;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  color: #054b80;
+  transition: all .3s;
+}
+/* HOVER STYLING */
+.stats-container:hover{
+  transform: scale(1.1);
+}
+.stats-container:hover .icon{
+    top: -20%;
+}
+.stats-container:hover .counter{
+  font-size: 45px;
+  top: 20%;
+}
+/* MEDIA QUERY */
+@media (max-width: 991px) {
+  body {
+    flex-direction: column;
+  }
+}
